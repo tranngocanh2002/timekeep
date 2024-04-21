@@ -8,7 +8,7 @@ class LoginController extends Controller
     public function login()
     {
         if (isset($_SESSION['user'])) {
-            header('Location: index.php?controller=category&action=index');
+            header('Location: index.php?controller=login&action=login');
             exit();
         }
         if (isset($_POST['submit'])) {
